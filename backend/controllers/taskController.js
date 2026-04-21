@@ -1,4 +1,4 @@
-const { Task, User } = require("../../backend1/models");
+const { Task, User } = require("../../backend/models");
 
 // @desc    Get all tasks (admin gets all, user gets own)
 // @route   GET /api/v1/tasks
