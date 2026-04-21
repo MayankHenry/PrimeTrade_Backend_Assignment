@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PrimeTrade Task Manager - Dashboard for managing your tasks" />
+  <title>PrimeTrade — Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="dashboard-page">
+  <!-- top nav -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon-sm">⚡</span>
+      <span class="nav-title">PrimeTrade</span>
+    </div>
+    <div class="nav-right">
+      <div class="user-info">
+        <span id="user-name">User</span>
+        <span class="role-badge" id="user-role">user</span>
+      </div>
+      <button class="btn btn-outline" id="logout-btn">Logout</button>
+    </div>
+  </nav>
+
+  <main class="dashboard-container">
+    <div id="dash-message" class="message hidden"></div>
+
+    <!-- task creation form -->
+    <section class="card form-section">
+      <h2 id="form-title">Create Task</h2>
+      <form id="task-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="task-title">Title</label>
+            <input type="text" id="task-title" placeholder="What needs to be done?" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="task-desc">Description</label>
+          <textarea id="task-desc" rows="3" placeholder="Add some details (optional)"></textarea>
+        </div>
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label for="task-status">Status</label>
+            <select id="task-status">
+              <option value="pending">Pending</option>
+              <option value="in-progress">In Progress</option>
+              <option value="completed">Completed</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="task-priority">Priority</label>
+            <select id="task-priority">
+              <option value="low">Low</option>
+              <option value="medium" selected>Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" id="task-submit-btn">Save Task</button>
+          <button type="button" class="btn btn-ghost hidden" id="cancel-edit">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- task list -->
+    <section class="task-section">
+      <h2>Your Tasks</h2>
+      <div id="task-list" class="task-grid">
+        <p class="empty-state">Loading tasks...</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/tasks.js"></script>
+</body>
+</html>
