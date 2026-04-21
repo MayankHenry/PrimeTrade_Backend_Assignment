@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const { Task, User } = require("../../backend/models");
+=======
+const { Task, User } = require("../models");
+>>>>>>> d0f2b32 (backend done)
 
 // @desc    Get all tasks (admin gets all, user gets own)
 // @route   GET /api/v1/tasks

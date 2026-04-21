@@ -7,7 +7,11 @@ const swaggerUi = require("swagger-ui-express");
 // load env vars
 dotenv.config();
 
+<<<<<<< HEAD
 const { connectDB } = require("../backend/config/db");
+=======
+const { connectDB } = require("./config/db");
+>>>>>>> d0f2b32 (backend done)
 const swaggerSpec = require("./docs/swagger");
 
 // load models + associations before sync

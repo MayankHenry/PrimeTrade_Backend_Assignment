@@ -1,5 +1,9 @@
 const jwt = require("jsonwebtoken");
+<<<<<<< HEAD
 const { User } = require("../../backend/models");
+=======
+const { User } = require("../models");
+>>>>>>> d0f2b32 (backend done)
 
 // helper to generate jwt
 const generateToken = (id) => {
