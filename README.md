@@ -24,7 +24,7 @@ A scalable REST API with JWT authentication, role-based access control, and CRUD
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/PrimeTrade_BackEnd_Assignment.git
+git clone https://github.com/MayankHenry/PrimeTrade_Backend_Assignment.git
 cd PrimeTrade_BackEnd_Assignment/backend
 ```
 
