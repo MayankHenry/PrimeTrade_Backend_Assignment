@@ -1,10 +1,6 @@
 const express = require("express");
 const { body } = require("express-validator");
-<<<<<<< HEAD
-const { register, login, getMe } = require("../../../backend/controllers/authController");
-=======
 const { register, login, getMe } = require("../../controllers/authController");
->>>>>>> d0f2b32 (backend done)
 const { validate } = require("../../middleware/validate");
 const { protect } = require("../../middleware/auth");
 
