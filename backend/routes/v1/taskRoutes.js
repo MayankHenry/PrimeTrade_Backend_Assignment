@@ -6,11 +6,8 @@ const {
   createTask,
   updateTask,
   deleteTask,
-<<<<<<< HEAD
-} = require("../../../backend/controllers/taskController");
-=======
+
 } = require("../../controllers/taskController");
->>>>>>> d0f2b32 (backend done)
 const { validate } = require("../../middleware/validate");
 const { protect } = require("../../middleware/auth");
 
