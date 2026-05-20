@@ -63,9 +63,9 @@ The server will auto-create tables on first run via Sequelize sync.
 
 ### Access
 
-- **Frontend:** http://localhost:5000
-- **API Docs (Swagger):** http://localhost:5000/api-docs
-- **Health Check:** http://localhost:5000/api/health
+- **Frontend:** primetrade-api.netlify.app
+- **API Docs (Swagger):** https://primetrade-backend-assignment-4lth.onrender.com/api/v1/api-docs
+- **Health Check:** https://primetrade-backend-assignment-4lth.onrender.com/api/v1/api/health
 
 ## API Endpoints
 
